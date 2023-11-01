@@ -53,13 +53,15 @@ The AWS CLI is a utility that helps you interact with AWS in a terminal. Command
 
 #### Chocolatey (Windows)
 Install Chocolatey https://chocolatey.org/install then:
-> choco install awscli
+
+    choco install awscli
 
 https://community.chocolatey.org/packages/awscli
 
 #### Homebrew (Mac)
 Install Homebrew: https://brew.sh/ then:
-> brew install awscli
+    
+    brew install awscli
 
 #### Linux
 With the package manager of your choice install `awscli`
@@ -124,23 +126,23 @@ AWS CDK provides a way to define/update cloud infrastructure through writing Typ
 
 To use CDK in the terminal you must install it with NPM
 
-> npm install -g aws-cdk
+    npm install -g aws-cdk
 
 In the root directory of the repository install NodeJS dependencies with:
 
-> npm install
+    npm install
 
 To build the CDK code, run:
 
-> cdk synth
+    cdk synth
 
 You must 'bootstrap' CDK once for each region/account you want to use. Where "admin" is the name of the AWS profile your using.
 
-> cdk --profile=admin bootstrap
+    cdk --profile=admin bootstrap
 
 To deploy the EC2 host, and Code Deploy resources to AWS run:
 
-cdk --profile=admin deploy
+    cdk --profile=admin deploy
 
 If all goes well, you now have an EC2 virtual machine awaiting deployment from GitHub! 
 
