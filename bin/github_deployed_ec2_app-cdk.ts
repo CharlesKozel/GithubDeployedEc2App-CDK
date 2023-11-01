@@ -5,6 +5,6 @@ import { GithubDeployedEc2AppStack } from '../lib/github-deployed-ec2-app-stack'
 
 const app = new cdk.App();
 new GithubDeployedEc2AppStack(app, 'GithubCodedeployCdkStack', {
-    repo: 'CharlesKozel/github-codedeploy-demo',
+    repo: 'CharlesKozel/GithubCodedeployDemo',
     cdApplicationName: 'DemoApplication',
 });
