@@ -91,7 +91,7 @@ export class GithubDeployedEc2AppStack extends cdk.Stack {
          * CFN Outputs of values that needed to be set in the GitHub repo for easy access.
          */
         new CfnOutput(this, 'IAMROLE_GITHUB', { value: githubActionsRole.role.roleArn });
-        new CfnOutput(this, 'S3BUCKET', { value: deploymentBucket.bucketArn });
+        new CfnOutput(this, 'S3BUCKET', { value: deploymentBucket.bucketName });
         new CfnOutput(this, 'AWS_REGION', { value: this.region });
         new CfnOutput(this, 'CODE_DEPLOY_APPLICATION', { value: application.applicationName });
         new CfnOutput(this, 'DEPLOYMENT_GROUP', { value: deploymentGroup.deploymentGroupName });
